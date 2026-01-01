@@ -30,9 +30,9 @@ function Signup() {
       let payload = { name, email, password };
 
       if (role === "user") {
-        endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev//api/user/signup";
+        endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev/api/user/signup";
       } else if (role === "farmer") {
-        endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev//api/farmer/signup";
+        endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev/api/farmer/signup";
         payload.district = district;
       }
 

@@ -18,8 +18,8 @@ function Login() {
 
     try {
       let endpoint = "";
-      if (role === "user") endpoint = "http://localhost:3001/api/user/login";
-      if (role === "farmer") endpoint = "http://localhost:3001/api/farmer/login";
+      if (role === "user") endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev//api/user/login";
+      if (role === "farmer") endpoint = "https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev//api/farmer/login";
 
       let res = null;
 
@@ -27,7 +27,7 @@ function Login() {
         res = await axios.post(endpoint, { email, password });
       } catch (userOrFarmerError) {
         try {
-          const adminRes = await axios.post("http://localhost:3001/api/admin/login", {
+          const adminRes = await axios.post("https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev//api/admin/login", {
             email,
             password,
           });

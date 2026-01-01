@@ -108,5 +108,5 @@ app.get("/api/farmers", (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log("✅ Server running on http://localhost:3001");
+  console.log("✅ Server running on https://5a24bee9-460b-41f6-948a-ab78a2b8cead-00-3a3qn4n7m9ueq.sisko.replit.dev/");
 });
